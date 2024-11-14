@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+  --blue: #345FF6;
+  --gunmetal: #253347;
+  --dark-electric-blue: #5E6E85;
+  --pure-white: #FFFFFF;
+  --font-family: "Inter", sans-serif;
+}
+
+.heading-xl{
+  font-size: 64px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
+}
+.heading-l{
+  font-size: 48px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
+}
+.heading-m{
+  font-size: 24px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
+}
+.heading-s{
+  font-size: 24px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
+}
