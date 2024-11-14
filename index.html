@@ -33,72 +33,106 @@
         <label for="weight">Weight</label>
         <input type="number" placeholder="kg" class="weight" name="weight">
       </form>
+      <div class="result_section">
+        <p>Your BMI is...</p>
+        <h2 id="result"></h2>
+        <p>Your BMI suggests you're <span class="height_note"></span></p>
+        <p>Your ideal weight is between <span class="weight_note"></span> </p>
+      </div>
     </section>
-  </div>
 
-  
-
-  Metric
-  Imperial
-
-  Height
-  Weight
-
-  Your BMI is...
-
-  <!-- add score -->
-
-  Your BMI suggests you're <!-- add classification -->. 
-  Your ideal weight is between <!-- add range -->.
-
-  What your BMI result means
-
-  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
+    <section class="bmi_note">
+      <img src="assets//images/image-man-eating.webp" alt="image-man-eating">
+      <div class="bmi_note_texts">
+        <h3>What your BMI result means</h3>
+        <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
   healthy weight may lower your chances of experiencing health issues later on, 
   such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
   fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
   strive for regular physical activity, ideally about 30 minutes daily for 
-  five days a week.
-
-  Healthy eating
-  Healthy eating promotes weight control, disease prevention, better digestion, 
-  immunity, mental clarity, and mood.
-
-  Regular exercise
-  Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
-  risk, fostering wellness and longevity.
-
-  Adequate sleep
-  Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
-  overall restoration and rejuvenation.
-
-  Limitations of BMI
-
-  Although BMI is often a practical indicator of healthy weight, it is not suited for 
+  five days a week.</p>
+      </div>
+    </section>
+    <section class="bmi_tips">
+      <div class="healthy_eating tip_card">
+        <img src="assets/images/icon-eating.svg" alt="icon-eating">
+        <div class="healthy_eating_text tip_note">
+          <h3>Healthy eating</h3>
+          <p>Healthy eating promotes weight control, disease prevention, better digestion, 
+  immunity, mental clarity, and mood.</p>
+        </div>
+      </div>
+      <div class="exercise tip_card">
+        <img src="assets/images/icon-exercise.svg" alt="icon-exercise">
+        <div class="exercise_texts tip_note">
+          <h3>Regular exercise</h3>
+          <p>Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
+  risk, fostering wellness and longevity.</p>
+        </div>
+      </div>
+      <div class="sleep tip_card">
+        <img src="assets/images/icon-sleep.svg" alt="icon-sleep">
+        <div class="sleep_texts tip_note">
+          <h3>Adequate sleep</h3>
+          <p>Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
+  overall restoration and rejuvenation.</p>
+        </div>
+      </div>
+    </section>
+    <section class="bmi_limitations">
+      <div class="limitation_notes">
+        <h3>Limitations of BMI</h3>
+        <p>Although BMI is often a practical indicator of healthy weight, it is not suited for 
   every person. Specific groups should carefully consider their BMI outcomes, and in 
-  certain cases, the measurement may not be beneficial to use.
-
-  Gender
-  The development and body fat composition of girls and boys vary with age. Consequently, 
-  a child's age and gender are considered when evaluating their BMI.
-
-  Age
-  In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
-  body fat content.
-
-  Muscle
-  BMI may misclassify muscular individuals as overweight or obese, as it doesn't 
-  differentiate muscle from fat.
-
-  Pregnancy
-  Expectant mothers experience weight gain due to their growing baby. Maintaining a 
+  certain cases, the measurement may not be beneficial to use.</p>
+      </div>
+      <div class="limit_cards">
+        <div class="gender_card limit_card">
+          <div class="gender_heading">
+            <img src="assets/images/icon-gender.svg" alt="icon-gender">
+            <h3>Gender</h3>
+          </div>
+          <p>The development and body fat composition of girls and boys vary with age. Consequently, 
+  a child's age and gender are considered when evaluating their BMI.</p>
+        </div>
+        <div class="age_card limit_card">
+          <div class="age_heading">
+            <img src="assets/images/icon-age.svg" alt="icon-age">
+            <h3>Age</h3>
+          </div>
+          <p>In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
+  body fat content.</p>
+        </div>
+        <div class="muscle_card limit_card">
+          <div class="muscle_heading">
+            <img src="assets/images/icon-muscle.svg" alt="icon-muscle">
+            <h3>Muscle</h3>
+          </div>
+          <p>BMI may misclassify muscular individuals as overweight or obese, as it doesn't 
+  differentiate muscle from fat.</p>
+        </div>
+        <div class="preg_card limit_card">
+          <div class="preg_heading">
+            <img src="assets/images/icon-pregnancy.svg" alt="icon-pregnancy">
+            <h3>Pregnancy</h3>
+          </div>
+          <p>Expectant mothers experience weight gain due to their growing baby. Maintaining a 
   healthy pre-pregnancy BMI is advisable to minimise health risks for both mother 
-  and child.
-
-  Race
-  Certain health concerns may affect individuals of some Black and Asian origins at 
+  and child.</p>
+        </div>
+        <div class="race_card limit_card">
+          <div class="race_heading">
+            <img src="assets/images/icon-race.svg" alt="icon-race">
+            <h3>Race</h3>
+          </div>
+          <p>Certain health concerns may affect individuals of some Black and Asian origins at 
   lower BMIs than others. To learn more, it is advised to discuss this with your 
-  GP or practice nurse.
+  GP or practice nurse.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 
+  <script src="script/main.js"></script>
 </body>
 </html>
