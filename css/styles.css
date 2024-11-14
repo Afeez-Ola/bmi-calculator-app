@@ -85,6 +85,7 @@ input, button, textarea, select {
   justify-content: center;
 }
 
+/* heading section starts */
 .heading_section{
   margin: auto;
   background-color: var(--gradient-1);
@@ -95,6 +96,7 @@ input, button, textarea, select {
   align-items: center;
   padding: 2rem;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .heading_section img{
@@ -118,4 +120,11 @@ input, button, textarea, select {
   color: var(--dark-electric-blue);
 }
 
+/* heading section ends */
+
+.calculation_section{
+  background-color: var(--pure-white);
+  border-radius: 2rem;
+  width: 80%;
+}
 
