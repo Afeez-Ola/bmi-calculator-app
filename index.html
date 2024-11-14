@@ -10,14 +10,33 @@
 </head>
 <body>
 
-  Body Mass Index Calculator
-
-  Better understand your weight in relation to your height using our 
+  <div class="container">
+    <header class="heading_section">
+      <img src="assets/images/logo.svg" alt="logo" class="logo">
+      <div class="header_texts">
+        <h2 class="header_heading">Body Mass Index Calculator</h2>
+        <p>Better understand your weight in relation to your height using our 
   body mass index (BM) calculator. While BMI is not the sole determinant 
   of a healthy weight, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
+  your overall health and well-being.</p>
+      </div>
+    </header>
+    <section class="calculation_section">
+      <h3>Enter your details below</h3>
+      <ul class="measuring_unit">
+        <li>Metric</li>
+        <li>Imperial</li>
+      </ul>
+      <form>
+        <label for="height">Height</label>
+        <input type="number" placeholder="cm" class="height" name="height">
+        <label for="weight">Weight</label>
+        <input type="number" placeholder="kg" class="weight" name="weight">
+      </form>
+    </section>
+  </div>
 
-  Enter your details below
+  
 
   Metric
   Imperial
