@@ -1,79 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
- --blue: #345ff6;
- --gunmetal: #253347;
- --dark-electric-blue: #5e6e85;
- --pure-white: #ffffff;
- --gradient-1: #d6e6fe;
- --stroke: #d8e2e7;
- --font-family: 'Inter', sans-serif;
+  --blue: #345ff6;
+  --gunmetal: #253347;
+  --dark-electric-blue: #5e6e85;
+  --pure-white: #ffffff;
+  --gradient-1: #d6e6fe;
+  --stroke: #d8e2e7;
+  --font-family: 'Inter', sans-serif;
 }
 
 .heading-xl {
- font-size: 64px;
- font-family: var(--font-family);
- font-weight: bold;
- line-height: 110%;
+  font-size: 64px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
 }
+
 .heading-l {
- font-size: 48px;
- font-family: var(--font-family);
- font-weight: bold;
- line-height: 110%;
+  font-size: 48px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
 }
+
 .heading-m {
- font-size: 24px;
- font-family: var(--font-family);
- font-weight: bold;
- line-height: 110%;
+  font-size: 24px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
 }
+
 .heading-s {
- font-size: 24px;
- font-family: var(--font-family);
- font-weight: bold;
- line-height: 110%;
+  font-size: 24px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
 }
 
 .text-body-m {
- font-family: var(--font-family);
- font-size: 16px;
- font-weight: normal;
- line-height: 150%;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
 }
+
 .text-body-m-bold {
- font-family: var(--font-family);
- font-size: 16px;
- font-weight: bold;
- line-height: 150%;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 150%;
 }
+
 .text-body-s {
- font-family: var(--font-family);
- font-size: 14px;
- font-weight: normal;
- line-height: 150%;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 150%;
 }
+
 .text-body-s-bold {
- font-family: var(--font-family);
- font-size: 14px;
- font-weight: bold;
- line-height: 150%;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 150%;
 }
 
 *,
 *::before,
 *::after {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
- margin: 0;
+  margin: 0;
 }
 
 body {
- line-height: 1.5;
- -webkit-font-smoothing: antialiased;
- font-family: var(--font-family);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-family);
 }
 
 img,
@@ -81,282 +87,292 @@ picture,
 video,
 canvas,
 svg {
- display: block;
- max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
- font: inherit;
+  font: inherit;
 }
 
 .container {
- margin: 0 auto;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* heading section starts */
 .heading_section {
- margin: auto;
- background-color: var(--gradient-1);
- border-radius: 0 0 2rem 2rem;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- padding: 2rem;
- gap: 1rem;
- margin-bottom: 2rem;
- padding-bottom: 10rem;
+  margin: auto;
+  background-color: var(--gradient-1);
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 10rem;
 }
 
 .heading_section img {
- width: 15%;
- max-width: 5rem;
+  width: 15%;
+  max-width: 5rem;
 }
 
 .header_texts {
- display: flex;
- text-align: center;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- gap: 1.5rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .header_heading {
- color: var(--gunmetal);
+  color: var(--gunmetal);
   max-width: 30rem;
 
 }
 
 .header_texts p {
- color: var(--dark-electric-blue);
+  color: var(--dark-electric-blue);
 }
 
 /* heading section ends */
 
 .calculation_section {
- background-color: var(--pure-white);
- border-radius: 2rem;
- width: 85%;
- padding: 1rem;
- gap: 1rem;
- display: flex;
- flex-direction: column;
- justify-content: center;
- position: relative;
- bottom: 7rem;
+  background-color: var(--pure-white);
+  border-radius: 2rem;
+  width: 85%;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom: 7rem;
 }
 
 .measuring_unit {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .unit {
- display: flex;
- flex-direction: row-reverse;
- justify-content: center;
- gap: 0.4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 0.4rem;
 }
 
 .unit input[type='radio'] {
- width: 1.3rem;
- height: 1.3rem;
- border-radius: 50%;
- background-color: var(--blue);
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background-color: var(--blue);
 }
 
 .unit input[type='radio']:checked {
- background-color: var(--stroke);
+  background-color: var(--stroke);
 }
 
-.metric_details_forms, .imperial_details_forms {
- display: flex;
- gap: 2rem;
- flex-direction: column;
+.metric_details_forms,
+.imperial_details_forms {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
 }
 
-.imperial_details_forms{
+.imperial_details_forms {
   display: none;
 }
 
 .metric_details_forms label {
- color: var(--dark-electric-blue);
+  color: var(--dark-electric-blue);
 }
 
-.imperial_details_forms div{
+.imperial_details_forms div {
   display: flex;
   justify-content: stretch;
   align-items: center;
   gap: 1.5rem;
 }
 
-.imperial_details_forms div input{
+.imperial_details_forms div input {
   width: 40%;
 }
 
 .detail_form {
- display: flex;
- flex-direction: column;
- gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .detail_form input {
- padding: 1rem;
- border-radius: 1rem;
- border: 1px solid var(--dark-electric-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--dark-electric-blue);
 }
 
 .detail_form input::placeholder {
- color: var(--blue);
- text-align: right;
- font-size: 24px;
- font-family: var(--font-family);
- font-weight: bold;
- line-height: 110%;
+  color: var(--blue);
+  text-align: right;
+  font-size: 24px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 110%;
 }
 
 .result_section {
- background-color: var(--blue);
- color: var(--pure-white);
- padding: 2rem;
- display: flex;
- flex-direction: column;
- gap: 1.5rem;
- border-radius: 1.5rem;
+  background-color: var(--blue);
+  color: var(--pure-white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 1.5rem;
 }
 
 .result_texts p {
- font-size: 1.17rem;
+  font-size: 1.17rem;
 }
 
 .bmi_note {
- display: flex;
- flex-direction: column;
- justify-content: center;
- gap: 2rem;
- margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .bmi_note_texts {
- width: 85%;
- margin: auto;
- display: flex;
- flex-direction: column;
- justify-content: center;
- gap: 1.4rem;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
 }
 
 .bmi_note_texts h3 {
- font-size: 1.5rem;
- line-height: 1.2;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
+
 .bmi_note_texts p {
- color: var(--dark-electric-blue);
+  color: var(--dark-electric-blue);
 }
 
 .bmi_tips {
- width: 90%;
- margin: auto;
- margin-block: 4rem;
- display: flex;
- flex-direction: column;
- justify-content: center;
- gap: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .tip_card {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: baseline;
- gap: 1.8rem;
- padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.8rem;
+  padding: 1rem;
 }
 
 .tip_note {
- display: flex;
- flex-direction: column;
- gap: 1.5rem;
- justify-content: center;
- align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .tip_note h3 {
- color: var(--gunmetal);
+  color: var(--gunmetal);
 }
 
 .tip_note p {
- color: var(--dark-electric-blue);
+  color: var(--dark-electric-blue);
 }
 
 .bmi_limitations {
- padding: 1rem;
- display: flex;
- flex-direction: column;
- justify-content: center;
- gap: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .limitation_notes {
- display: flex;
- flex-direction: column;
- justify-content: center;
- text-align: center;
- gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 .limitation_notes h3 {
- font-size: 2rem;
- color: var(--gunmetal);
+  font-size: 2rem;
+  color: var(--gunmetal);
 }
+
 .limitation_notes p {
- font-size: 1rem;
- color: var(--dark-electric-blue);
+  font-size: 1rem;
+  color: var(--dark-electric-blue);
 }
 
 .limit_cards {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: baseline;
- gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
 }
 
 .limit_card {
- padding: 1rem;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: baseline;
- gap: 1rem;
- box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 }
 
 .limit_card p {
- color: var(--dark-electric-blue);
+  color: var(--dark-electric-blue);
 }
 
 .limit_card_heading {
- display: flex;
- gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 @media screen and (min-width: 35rem) {
 
-  .measuring_unit{
+  .measuring_unit {
     width: 55%;
   }
 
-  .measuring_form{
+  .measuring_form {
     flex-direction: row;
+  }
+
+  .result_section {
+    gap: 8rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+        border-radius: 0 10rem 10rem 0;
   }
 }
