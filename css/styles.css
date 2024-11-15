@@ -450,4 +450,10 @@ select {
     right: 10rem;
     padding: 3rem;
   }
+
+  .bmi_note{
+    gap: 3rem;
+    width: 80%;
+    justify-content: space-between;
+  }
 }
