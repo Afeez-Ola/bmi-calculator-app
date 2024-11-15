@@ -279,7 +279,7 @@ select {
 }
 
 .bmi_limitations {
- padding: 2rem;
+ padding: 1rem;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -299,7 +299,7 @@ select {
  color: var(--gunmetal);
 }
 .limitation_notes p {
- font-size: 0.9rem;
+ font-size: 1rem;
  color: var(--dark-electric-blue);
 }
 
@@ -309,4 +309,22 @@ select {
  justify-content: center;
  align-items: baseline;
  gap: 2rem;
+}
+
+.limit_card {
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: baseline;
+ gap: 1rem;
+}
+
+.limit_card p {
+ color: var(--dark-electric-blue);
+}
+
+.limit_card_heading {
+ display: flex;
+ gap: 1.5rem;
 }
