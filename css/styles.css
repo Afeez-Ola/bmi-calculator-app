@@ -165,21 +165,23 @@ select {
 }
 
 .unit input[type='radio'] {
- transform: scale(1.5);
- margin: 5px;
+ width: 1.3rem;
+ height: 1.3rem;
+ border-radius: 50%;
+ background-color: var(--blue);
 }
 
 .unit input[type='radio']:checked {
  background-color: var(--stroke);
 }
 
-.details_forms {
+.metric_details_forms {
  display: flex;
  gap: 2rem;
  flex-direction: column;
 }
 
-.details_forms label {
+.metric_details_forms label {
  color: var(--dark-electric-blue);
 }
 

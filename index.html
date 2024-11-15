@@ -32,17 +32,17 @@
    <section class="calculation_section">
     <h3 class="heading-m">Enter your details below</h3>
     <div class="measuring_unit">
-     <form class="metric unit">
+     <div class="metric unit">
       <label class="text-body-m-bold" for="metric">Metric</label>
-      <input type="radio" name="metric" id="metric" />
-     </form>
+      <input type="radio" name="unit" id="metric" value="metric" title="metric" class="checked" />
+     </div>
 
-     <form class="imperial unit">
+     <div class="imperial unit">
       <label class="text-body-m-bold" for="imperial">Imperial</label>
-      <input type="radio" name="imperial" id="imperial" />
-     </form>
+      <input type="radio" name="unit" id="imperial" value="imperial" title="imperial" />
+     </div>
     </div>
-    <div class="details_forms">
+    <div class="metric_details_forms">
      <form class="height_form detail_form">
       <label class="text-body-s" for="height">Height</label>
       <input type="number" placeholder="cm" class="height" name="height" />
