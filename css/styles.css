@@ -285,3 +285,28 @@ select {
  justify-content: center;
  gap: 2rem;
 }
+
+.limitation_notes {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ gap: 1rem;
+}
+
+.limitation_notes h3 {
+ font-size: 2rem;
+ color: var(--gunmetal);
+}
+.limitation_notes p {
+ font-size: 0.9rem;
+ color: var(--dark-electric-blue);
+}
+
+.limit_cards {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: baseline;
+ gap: 2rem;
+}
