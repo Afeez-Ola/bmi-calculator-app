@@ -175,14 +175,28 @@ select {
  background-color: var(--stroke);
 }
 
-.metric_details_forms {
+.metric_details_forms, .imperial_details_forms {
  display: flex;
  gap: 2rem;
  flex-direction: column;
 }
 
+.imperial_details_forms{
+  display: none;
+}
+
 .metric_details_forms label {
  color: var(--dark-electric-blue);
+}
+
+.imperial_details_forms div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imperial_details_forms div input{
+  width: 40%;
 }
 
 .detail_form {
