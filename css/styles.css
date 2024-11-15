@@ -117,6 +117,7 @@ select {
 
 .heading_section img {
  width: 15%;
+ max-width: 5rem;
 }
 
 .header_texts {
@@ -130,6 +131,8 @@ select {
 
 .header_heading {
  color: var(--gunmetal);
+  max-width: 30rem;
+
 }
 
 .header_texts p {
@@ -191,8 +194,9 @@ select {
 
 .imperial_details_forms div{
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .imperial_details_forms div input{
@@ -344,4 +348,15 @@ select {
 .limit_card_heading {
  display: flex;
  gap: 1.5rem;
+}
+
+@media screen and (min-width: 35rem) {
+
+  .measuring_unit{
+    width: 55%;
+  }
+
+  .measuring_form{
+    flex-direction: row;
+  }
 }
