@@ -158,6 +158,7 @@ select {
   justify-content: center;
   position: relative;
   bottom: 7rem;
+  margin: auto;
 }
 
 .measuring_unit {
@@ -418,4 +419,27 @@ select {
     width: 40%;
   }
 
+}
+
+@media screen and (min-width: 60rem) {
+  .top_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading_section{
+    align-items: baseline;
+  }
+
+  .header_texts{
+    align-items: baseline;
+    text-align: left;
+  }
+
+  .calculation_section{
+    position: static;
+    bottom: auto;
+  }
 }

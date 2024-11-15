@@ -13,73 +13,76 @@
 
 <body>
   <div class="container">
-    <header class="heading_section">
-      <img src="assets/images/logo.svg" alt="logo" class="logo" />
-      <div class="header_texts">
-        <h2 class="header_heading heading-l">Body Mass Index Calculator</h2>
-        <p class="text-body-m">
-          Better understand your weight in relation to your height using our body
-          mass index (BM) calculator. While BMI is not the sole determinant of a
-          healthy weight, it offers a valuable starting point to evaluate your
-          overall health and well-being.
-        </p>
-      </div>
-    </header>
-    <section class="calculation_section">
-      <h3 class="heading-m">Enter your details below</h3>
-      <div class="measuring_unit">
-        <div class="metric unit">
-          <label class="text-body-m-bold" for="metric">Metric</label>
-          <input type="radio" name="unit" id="metric" value="metric" title="metric" checked />
-        </div>
-
-        <div class="imperial unit">
-          <label class="text-body-m-bold" for="imperial">Imperial</label>
-          <input type="radio" name="unit" id="imperial" value="imperial" title="imperial" />
-        </div>
-      </div>
-      <div class="metric_details_forms measuring_form" id="metric_data">
-        <form class="height_form detail_form">
-          <label class="text-body-s" for="height">Height</label>
-          <input type="number" placeholder="cm" class="height" name="height" />
-        </form>
-        <form class="weight_form detail_form">
-          <label class="text-body-s" for="weight">Weight</label>
-          <input type="number" placeholder="kg" class="weight" name="weight" />
-        </form>
-      </div>
-      <div class="imperial_details_forms measuring_form" id="imperial_data">
-        <form class="height_form detail_form">
-          <label class="text-body-s" for="height">Height</label>
-          <div>
-            <input type="number" placeholder="ft" class="height" name="height" />
-            <input type="number" placeholder="in" class="height" name="height" />
-          </div>
-        </form>
-        <form class="weight_form detail_form">
-          <label class="text-body-s" for="weight">Weight</label>
-          <div>
-            <input type="number" placeholder="st" class="weight" name="weight" />
-            <input type="number" placeholder="lbs" class="weight" name="weight" />
-          </div>
-        </form>
-      </div>
-
-      <div class="result_section">
-        <div class="bmi_result">
-           <p class="text-body-m-bold">Your BMI is...</p>
-        <h2 class="heading-l" id="result">23.4</h2>
-        </div>
-       
-        <div class="result_texts">
-          <p class="text-body-s">
-            Your BMI suggests you're <span class="height_note">heighty weight</span>. Your ideal
-            weight is between
-            <span class="weight_note text-body-s-bold">63kgs - 85.2kgs</span>
+    <div class="top_section">
+      <header class="heading_section">
+        <img src="assets/images/logo.svg" alt="logo" class="logo" />
+        <div class="header_texts">
+          <h2 class="header_heading heading-l">Body Mass Index Calculator</h2>
+          <p class="text-body-m">
+            Better understand your weight in relation to your height using our body
+            mass index (BM) calculator. While BMI is not the sole determinant of a
+            healthy weight, it offers a valuable starting point to evaluate your
+            overall health and well-being.
           </p>
         </div>
-      </div>
-    </section>
+      </header>
+      <section class="calculation_section">
+        <h3 class="heading-m">Enter your details below</h3>
+        <div class="measuring_unit">
+          <div class="metric unit">
+            <label class="text-body-m-bold" for="metric">Metric</label>
+            <input type="radio" name="unit" id="metric" value="metric" title="metric" checked />
+          </div>
+
+          <div class="imperial unit">
+            <label class="text-body-m-bold" for="imperial">Imperial</label>
+            <input type="radio" name="unit" id="imperial" value="imperial" title="imperial" />
+          </div>
+        </div>
+        <div class="metric_details_forms measuring_form" id="metric_data">
+          <form class="height_form detail_form">
+            <label class="text-body-s" for="height">Height</label>
+            <input type="number" placeholder="cm" class="height" name="height" />
+          </form>
+          <form class="weight_form detail_form">
+            <label class="text-body-s" for="weight">Weight</label>
+            <input type="number" placeholder="kg" class="weight" name="weight" />
+          </form>
+        </div>
+        <div class="imperial_details_forms measuring_form" id="imperial_data">
+          <form class="height_form detail_form">
+            <label class="text-body-s" for="height">Height</label>
+            <div>
+              <input type="number" placeholder="ft" class="height" name="height" />
+              <input type="number" placeholder="in" class="height" name="height" />
+            </div>
+          </form>
+          <form class="weight_form detail_form">
+            <label class="text-body-s" for="weight">Weight</label>
+            <div>
+              <input type="number" placeholder="st" class="weight" name="weight" />
+              <input type="number" placeholder="lbs" class="weight" name="weight" />
+            </div>
+          </form>
+        </div>
+
+        <div class="result_section">
+          <div class="bmi_result">
+            <p class="text-body-m-bold">Your BMI is...</p>
+            <h2 class="heading-l" id="result">23.4</h2>
+          </div>
+
+          <div class="result_texts">
+            <p class="text-body-s">
+              Your BMI suggests you're <span class="height_note">heighty weight</span>. Your ideal
+              weight is between
+              <span class="weight_note text-body-s-bold">63kgs - 85.2kgs</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
 
     <section class="bmi_note">
       <img src="assets//images/image-man-eating.webp" alt="image-man-eating" />
