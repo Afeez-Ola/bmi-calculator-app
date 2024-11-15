@@ -152,7 +152,7 @@ select {
   border-radius: 2rem;
   width: 85%;
   padding: 1rem;
-  gap: 1rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,6 +265,7 @@ select {
 .bmi_note_texts h3 {
   font-size: 1.5rem;
   line-height: 1.2;
+  color: var(--gunmetal);
 }
 
 .bmi_note_texts p {
@@ -361,6 +362,14 @@ select {
 
 @media screen and (min-width: 35rem) {
 
+  .heading_section {
+    padding-bottom: 20rem;
+  }
+
+  .calculation_section {
+    bottom: 20rem;
+  }
+
   .measuring_unit {
     width: 55%;
   }
@@ -373,6 +382,40 @@ select {
     gap: 8rem;
     flex-direction: row;
     justify-content: space-evenly;
-        border-radius: 0 10rem 10rem 0;
+    border-radius: 0 10rem 10rem 0;
   }
+
+  .bmi_note {
+    flex-direction: row;
+  }
+
+  .bmi_note img {
+    width: 40%;
+  }
+
+  .bmi_note_texts {
+    width: 45%;
+    text-align: left;
+  }
+
+  .bmi_note_texts h3 {
+    width: 80%;
+  }
+
+  .tip_card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .limit_cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+  }
+
+  .limit_card{
+    width: 40%;
+  }
+
 }
