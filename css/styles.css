@@ -456,4 +456,10 @@ select {
     width: 80%;
     justify-content: space-between;
   }
+
+  .bmi_tips{
+    flex-direction: row;
+    width: 80%;
+  }
+  
 }
