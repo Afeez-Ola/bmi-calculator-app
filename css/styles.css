@@ -461,5 +461,10 @@ select {
     flex-direction: row;
     width: 80%;
   }
-  
+
+  .tip_card{
+    flex-direction: column;
+    align-items: baseline;
+  }
+
 }
