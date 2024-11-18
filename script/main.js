@@ -7,6 +7,10 @@ const imperialUnit = document.getElementById("imperial_data");
 const metricDiv = document.getElementById("metric_data");
 const ImperialDiv = document.getElementById("imperial_data");
 
+
+// The BMI Result
+const bmiResult = document.getElementById("result");
+
 // The Metric Form
 const height_form_metric = document.getElementById("height_form_metric");
 const weight_form_metric = document.getElementById("weight_form_metric");
@@ -28,6 +32,8 @@ metricRadio.addEventListener("change", isImperialChecked);
 height_form_metric.addEventListener("keyup", getHeightFormMetric)
 weight_form_metric.addEventListener("keyup", getWeightFormMetric)
 
+metricDiv.addEventListener("change", metricBmiCalculation(getHeightFormMetric(),getWeightFormMetric()))
+
 function isImperialChecked(e){
   e.preventDefault();
 
@@ -41,11 +47,17 @@ function isImperialChecked(e){
   }
 }
 
-function getHeightFormMetric(e){
-  e.preventDefault();
-  console.log(e.target.value)
+function getHeightFormMetric(){
+  // e.preventDefault();
+  return heightCm.value
 }
-function getWeightFormMetric(e){
-  e.preventDefault();
-  console.log(e.target.value)
+function getWeightFormMetric(){
+  // e.preventDefault();
+  return weightKg.value
 }
+
+function metricBmiCalculation(height, weight){
+  console.log(height, weight);
+  bmiResult.innerText = (weight * weight)/height
+}
+
