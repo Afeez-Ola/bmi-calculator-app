@@ -25,6 +25,8 @@ const weightLbs = document.getElementById("weight_lbs");
 
 imperialRadio.addEventListener("change", isImperialChecked);
 metricRadio.addEventListener("change", isImperialChecked);
+height_form_metric.addEventListener("keyup", getHeightFormMetric)
+weight_form_metric.addEventListener("keyup", getWeightFormMetric)
 
 function isImperialChecked(e){
   e.preventDefault();
@@ -37,4 +39,13 @@ function isImperialChecked(e){
     metricUnit.style.display = "none"
     console.log("metric Radio is checked!");
   }
+}
+
+function getHeightFormMetric(e){
+  e.preventDefault();
+  console.log(e.target.value)
+}
+function getWeightFormMetric(e){
+  e.preventDefault();
+  console.log(e.target.value)
 }
