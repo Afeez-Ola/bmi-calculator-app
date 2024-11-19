@@ -474,5 +474,8 @@ select {
   .arrow_image{
     display: block;
   }
+  .limit_card{
+    width: 30%;
+  }
 
 }
