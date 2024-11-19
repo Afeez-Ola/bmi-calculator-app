@@ -48,12 +48,12 @@ function isImperialChecked(e){
 }
 
 function getHeightFormMetric(){
-  // e.preventDefault();
-  return heightCm.value
+  let height = int(heightCm.value)/100
+  return height
 }
 function getWeightFormMetric(){
-  // e.preventDefault();
-  return weightKg.value
+  let weight = int(weightKg.value)
+  return weight
 }
 
 function metricBmiCalculation(height, weight){
