@@ -69,26 +69,25 @@ function metricBmiCalculation(){
   let maxIdealWeight = 0;
 
   if (height > 0 && weight > 0){
-    const bmi = (weight / (height * height)).toFixed(1)
-
+    const bmi = (weight / (height * height)).toFixed(1);
     if (bmi < underweight){
-      weightNote.innerText = "Underweight"
+      weightNote.innerText = "Underweight";
       minIdealWeight = (underweight * (height**2)).toFixed(1);
-      idealWeight.innerText = minIdealWeight
+      idealWeight.innerText = minIdealWeight;
     } else if (bmi == minHealthyWeight || bmi <= maxHealthyWeight) {
-      weightNote.innerText = "Healthy"
+      weightNote.innerText = "Healthy";
       minIdealWeight = (minHealthyWeight * (height**2)).toFixed(1);
       maxIdealWeight = (maxHealthyWeight * (height**2)).toFixed(1);
       idealWeight.innerText = minIdealWeight + " - " + maxIdealWeight
     } else if (bmi == minOverWeight || bmi <= maxOverWeight) {
-      weightNote.innerText = "Overweight"
+      weightNote.innerText = "Overweight";
       minIdealWeight = (minOverWeight * (height**2)).toFixed(1);
       maxIdealWeight = (maxOverWeight * (height**2)).toFixed(1)
-      idealWeight.innerText = minIdealWeight + " - " + maxIdealWeight
+      idealWeight.innerText = minIdealWeight + " - " + maxIdealWeight;
     } else{
-      weightNote.innerText = "Obese"
-      minIdealWeight = (obese * (height**2)).toFixed(1)
-      idealWeight.innerText = minIdealWeight + " - " + maxIdealWeight
+      weightNote.innerText = "Obese";
+      minIdealWeight = (obese * (height**2)).toFixed(1);
+      idealWeight.innerText = minIdealWeight + " - " + maxIdealWeight;
     }
 
     bmiResult.innerText = bmi
