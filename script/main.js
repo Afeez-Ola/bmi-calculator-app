@@ -7,9 +7,20 @@ const imperialUnit = document.getElementById("imperial_data");
 const metricDiv = document.getElementById("metric_data");
 const ImperialDiv = document.getElementById("imperial_data");
 
+// BMI UNIT
+const underweight =  18.5
+const minHealthyWeight = 18.6;
+const maxHealthyWeight = 24.9;
+const minOverWeight = 25.0;
+const maxOverWeight = 29.9;
+const obese = 30.0;
+
 // weight Note
 const weightNote = document.getElementById("weight_note");
 
+// IDeal weight
+
+const idealWeight = document.getElementById("ideal_weight");
 
 // The BMI Result
 const bmiResult = document.getElementById("result");
@@ -35,7 +46,6 @@ metricRadio.addEventListener("change", isImperialChecked);
 height_form_metric.addEventListener("input", metricBmiCalculation)
 weight_form_metric.addEventListener("input", metricBmiCalculation)
 
-// metricDiv.addEventListener("change", metricBmiCalculation(getHeightFormMetric,getWeightFormMetric))
 
 function isImperialChecked(e){
   e.preventDefault();
@@ -55,18 +65,27 @@ function isImperialChecked(e){
 function metricBmiCalculation(){
   const height = (parseFloat(heightCm.value)/100);
   const weight = parseFloat(weightKg.value);
+  let minIdealWeight = 0;
+  let maxIdealWeight = 0;
 
   if (height > 0 && weight > 0){
     const bmi = (weight / (height * height)).toFixed(1)
 
-    if (bmi < 18.5){
+    if (bmi < underweight){
       weightNote.innerText = "Underweight"
-    } else if (bmi == 18.5 || bmi <= 24.9) {
+      minIdealWeight = underweight * (height**2);
+      ideal
+    } else if (bmi == minHealthyWeight || bmi <= maxHealthyWeight) {
       weightNote.innerText = "Healthy"
-    } else if (bmi == 25 || bmi <= 29.9) {
+      minIdealWeight = minHealthyWeight * (height**2);
+      maxIdealWeight = maxHealthyWeight * (height**2);
+    } else if (bmi == minOverWeight || bmi <= maxOverWeight) {
       weightNote.innerText = "Overweight"
+      minIdealWeight = minOverWeight * (height**2);
+      maxIdealWeight = maxOverWeight * (height**2)
     } else{
       weightNote.innerText = "Obese"
+      minIdealWeight = obese * (height**2)
     }
 
     bmiResult.innerText = bmi
