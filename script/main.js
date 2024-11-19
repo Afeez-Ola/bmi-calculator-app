@@ -73,7 +73,7 @@ function metricBmiCalculation(){
     if (bmi < underweight){
       weightNote.innerText = "Underweight";
       minIdealWeight = (underweight * (height**2)).toFixed(1);
-      idealWeight.innerText = minIdealWeight;
+      idealWeight.innerText = minIdealWeight + " - 60";
     } else if (bmi == minHealthyWeight || bmi <= maxHealthyWeight) {
       weightNote.innerText = "Healthy";
       minIdealWeight = (minHealthyWeight * (height**2)).toFixed(1);
@@ -89,8 +89,7 @@ function metricBmiCalculation(){
       minIdealWeight = (obese * (height**2)).toFixed(1);
       idealWeight.innerText = minIdealWeight + " - " + maxIdealWeight;
     }
-
-    bmiResult.innerText = bmi
+    bmiResult.innerText = bmi;
   }
 }
 
